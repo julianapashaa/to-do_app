@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffe4ec, #f8d7ff, #e8d7ff);
+  min-height: 100vh;
+  color: #4a2c4f;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #7b2cbf;
+}
+
+.topbar {
+  background: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.topbar h2 {
+  color: #9d4edd;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links button {
+  background: #f3d9fa;
+  color: #7b2cbf;
+}
+
+.layout {
+  display: block;
+}
+
+.main-content {
+  padding: 30px;
+}
+
+form {
+  background: white;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(123, 44, 191, 0.2);
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #e7b7ff;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #c77dff;
+  box-shadow: 0 0 8px rgba(199, 125, 255, 0.4);
+}
+
+button {
+  background: linear-gradient(135deg, #ff8fab, #c77dff);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  margin: 8px 5px 8px 0;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.task-card {
+  background: white;
+  max-width: 500px;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(255, 143, 171, 0.25);
+}
+
+.task-card h3 {
+  color: #9d4edd;
+}
+
+.task-card.low {
+  border-left: 6px solid #a7c957;
+}
+
+.task-card.medium {
+  border-left: 6px solid #ffb703;
+}
+
+.task-card.high {
+  border-left: 6px solid #ff4d6d;
+}
+
+.task-card.completed {
+  opacity: 0.6;
+  background: #f3f3f3;
+}
+
+.task-card.completed h3 {
+  text-decoration: line-through;
+}
+
+.date-title {
+  text-align: center;
+  color: #4a2c4f;
+  margin: 40px auto 25px;
+  font-size: 28px;
+}
