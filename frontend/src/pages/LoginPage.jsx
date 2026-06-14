@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 function LoginPage() {
@@ -62,6 +63,10 @@ function LoginPage() {
         <button type="submit">
           Login
         </button>
+        <p>
+  Don't have an account?{" "}
+  <Link to="/">Create account</Link>
+</p>
 
       </form>
     </div>

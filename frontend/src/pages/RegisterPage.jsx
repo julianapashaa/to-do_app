@@ -57,7 +57,8 @@ function RegisterPage() {
 
         <button type="submit">Create Account</button>
         <p>
-  Already have an account? <Link to="/">Login</Link>
+  Already have an account?{" "}
+  <Link to="/login">Login</Link>
 </p>
       </form>
     </div>
